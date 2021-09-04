@@ -22,7 +22,7 @@ module.exports = {
     },
     locale: "en",
     title: `Porque TQM`,
-    description: `Photography portfolio of John Doe`,
+    description: `Pagina oficial de Porque TQM: Tienda de regalos, sorpresas Y mucho mas!`,
     author: `Laura Madrid`,
   },
   plugins: [
