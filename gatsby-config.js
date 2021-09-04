@@ -11,19 +11,19 @@ if (!CONTENTFUL_SPACE_ID || !CONTENTFUL_ACCESS_TOKEN) {
 module.exports = {
   siteMetadata: {
     menu: [
-      { name: "Home", to: "/" },
-      { name: "About", to: "/about" },
+      { name: "Inicio", to: "/" },
+      { name: "Quiénes Somos", to: "/quienes_somos" },
     ],
     links: {
-      facebook: "https://www.facebook.com/",
-      instagram: "https://www.instagram.com/",
-      pinterest: "https://pinterest.com/",
-      twitter: "https://twitter.com/",
+      facebook: "https://www.facebook.com/Porque-TQM-108369101582290",
+      instagram: "https://www.instagram.com/porquetqm/",
+      // pinterest: "https://pinterest.com/",
+      // twitter: "https://twitter.com/",
     },
     locale: "en",
-    title: `John Doe`,
+    title: `Porque TQM`,
     description: `Photography portfolio of John Doe`,
-    author: `@johndoe`,
+    author: `Laura Madrid`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -54,8 +54,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `John Doe`,
-        short_name: `johndoe`,
+        name: `Porque TQM`,
+        short_name: `PorqueTQM`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#3182ce`,

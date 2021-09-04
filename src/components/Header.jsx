@@ -20,10 +20,10 @@ const Header = () => {
   `)
 
   return (
-    <div className="container pt-6 pb-12 md:pt-12">
+    <div className="container md:pt-12">
       <div className="flex justify-between items-center">
         <Link to="/">
-          <img alt="Logo" className="w-24 md:w-32" src="logo.svg" />
+          <img alt="Logo" className="" src="logo.png" />
         </Link>
 
         <button
@@ -38,8 +38,8 @@ const Header = () => {
           {site.data.menu.map((link, key) => (
             <Link
               key={`menu_desktop_link${key}`}
-              className="ml-6 sm:ml-8 text-sm sm:text-base font-medium px-px border-b-2 pb-2 border-transparent text-gray-700 hover:text-gray-800 hover:border-gray-200 transition duration-150 ease-in-out"
-              activeClassName="border-blue-600 text-gray-900 hover:border-blue-600"
+              className="ml-6 sm:ml-8 text-sm sm:text-base font-large px-px border-b-2 pb-2 border-transparent text-gray-700 hover:text-gray-800 hover:border-gray-200 transition duration-150 ease-in-out"
+              activeClassName="border-pink-700 text-gray-900 hover:border-purple-600"
               to={link.to}
             >
               {link.name}

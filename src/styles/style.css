@@ -22,4 +22,9 @@ body {
   .container {
     @apply .px-8;
   }
+  /* .logo {
+    width: 400px;
+    padding: 0;
+    vertical-align: left;
+   } */
 }

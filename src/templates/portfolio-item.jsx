@@ -5,7 +5,7 @@ import SiteMetadata from "../components/SiteMetadata"
 import Button from "../components/Button"
 import Cards from "../components/Cards"
 import Carousel from "../components/Carousel"
-import Newsletter from "../components/Newsletter"
+// import Newsletter from "../components/Newsletter"
 import Layout from "../layouts/Layout"
 
 export default props => {
@@ -16,9 +16,9 @@ export default props => {
     related,
     summary,
     thumbnail,
-    url,
   } = props.data.item
 
+  const email = "mailto:porqueTQMColombia@gmail.com"
   return (
     <Layout>
       <SiteMetadata
@@ -42,7 +42,7 @@ export default props => {
               <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl mb-1">
                 {name}
               </h1>
-              <h2 className="text-xl leading-tight font-semibold tracking-tight text-blue-600 sm:text-2xl">
+              <h2 className="text-xl leading-tight font-semibold tracking-tight text-purple-600 sm:text-2xl">
                 {summary}
               </h2>
               {description && (
@@ -50,11 +50,9 @@ export default props => {
                   {description.description}
                 </div>
               )}
-              {url && (
-                <div className="mt-8">
-                  <Button href={url}>More info</Button>
-                </div>
-              )}
+              <div className="mt-8">
+                <Button><a href={email}>Contactame</a></Button>
+              </div>
             </div>
           </div>
         </div>
@@ -63,13 +61,13 @@ export default props => {
         <div className="bg-gray-100 py-12 lg:py-16">
           <div className="container">
             <h2 className="text-3xl sm:text-4xl leading-tight font-extrabold tracking-tight text-gray-900 mb-8">
-              You may also like
+            También te encantaria ver
             </h2>
           </div>
           <Cards items={related} hideLastItemOnMobile={true} />
         </div>
       )}
-      <Newsletter />
+      {/* <Newsletter /> */}
     </Layout>
   )
 }
